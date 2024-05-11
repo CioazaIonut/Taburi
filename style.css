@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0px;
+    border: none;
+    font-family: "Ubuntu Sans", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.primul-tab{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #112993; 
+    color: #ffffff;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+  
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primul-paragraf{
+    display: none;
+    color: #dc0f12;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.al-doilea-tab{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: rgb(209, 193, 16); 
+    color: #ffffff;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+  
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.al-doilea-paragraf{
+    display: none;
+    color: rgb(209, 193, 16); 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.al-treilea-tab{
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #dc0f12;
+    color: #ffffff;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+  
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.al-treilea-paragraf{
+    display: none;
+    color: #112993;
+    margin-left: 30px;
+    margin-right: 30px;
+}
