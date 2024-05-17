@@ -4,6 +4,7 @@ const alTreileaTab = document.querySelector(".al-treilea-tab");
 const primulPraragraf = document.querySelector(".primul-paragraf");
 const alDoileaParagraf = document.querySelector(".al-doilea-paragraf");
 const alTreileaParagraf = document.querySelector(".al-treilea-paragraf");
+const resetButton = document.querySelector('.reset-button');
 
 
 //primul tab
@@ -36,6 +37,11 @@ const deschidealTreileaTab = () => {
 
 alTreileaTab.addEventListener("click", deschidealTreileaTab);
 
+const reset = () => {
+    // nu imi dau seama ce sa scriu in functie
+};
+
+resetButton.addEventListener('click');
 /*
 structura generala a unui addEventListener:
 1: scriem numele variabileiin care ne-am selectat butonul
