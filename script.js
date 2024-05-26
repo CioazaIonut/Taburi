@@ -1,16 +1,24 @@
 const primulTab = document.querySelector(".primul-tab");
 const alDoileaTab = document.querySelector(".al-doilea-tab");
 const alTreileaTab = document.querySelector(".al-treilea-tab");
+
 const primulPraragraf = document.querySelector(".primul-paragraf");
 const alDoileaParagraf = document.querySelector(".al-doilea-paragraf");
 const alTreileaParagraf = document.querySelector(".al-treilea-paragraf");
+
 const resetButton = document.querySelector('.reset-button');
+
 const seeMoreUnu = document.querySelector(".content-more-unu");
 const spanMoreUnu = document.querySelector(".lorem-content-unu");
+const seeLessUnu = document.querySelector(".less-content-more-unu");
+
 const seeMoreDoi = document.querySelector(".content-more-doi");
 const spanMoreDoi = document.querySelector(".lorem-content-doi");
+const seeLessDoi = document.querySelector(".less-content-more-doi");
+
 const seeMoreTrei = document.querySelector(".content-more-trei");
 const spanMoreTrei = document.querySelector(".lorem-content-trei");
+const seeLessTrei = document.querySelector(".less-content-more-trei");
 
 
 //primul tab
@@ -66,18 +74,72 @@ const reset = () => {
     primulTab.classList.add("active-tab");
     alDoileaTab.classList.remove("active-tab");
     alTreileaTab.classList.remove("active-tab");
+
+    seeMoreUnu.style.display = "none"
+    seeMoreDoi.style.display = "none"
+    seeMoreTrei.style.display = "none"
 };
 
 resetButton.addEventListener('click', reset);
 
-//see more Button
+//see more Button 1
 
 const seeMoreFunction = () =>{
+    seeMoreUnu.style.display = "none"
+    seeLessUnu.style.display = "block"
     spanMoreUnu.classList.remove("lorem-content-unu");
 
 }
 
-seeMore.addEventListener ("click", seeMoreFunction);
+seeMoreUnu.addEventListener("click", seeMoreFunction);
+
+const seeLessFunction = () => {
+    spanMoreUnu.classList.add("lorem-content-unu");
+    seeLessUnu.style.display = "none"
+    seeMoreUnu.style.display = "block"
+
+}
+seeLessUnu.addEventListener("click",seeLessFunction);
+
+//see more Button 2
+
+const seeMoreFunctionDoi = () =>{
+    seeMoreDoi.style.display = "none"
+    seeMoreDoi.style.display = "block"
+    spanMoreDoi.classList.remove("lorem-content-doi");
+
+}
+
+seeMoreDoi.addEventListener("click", seeMoreFunctionDoi);
+
+const seeLessFunctionDoi = () => {
+    spanMoreDoi.classList.add("lorem-content-doi");
+    seeLessDoi.style.display = "none"
+    seeMoreDoi.style.display = "block"
+
+}
+seeLessDoi.addEventListener("click",seeLessFunctionDoi);
+
+//see more Button 3
+
+const seeMoreFunctionTrei = () =>{
+    seeMoreTrei.style.display = "none"
+    seeMoreTrei.style.display = "block"
+    spanMoreTrei.classList.remove("lorem-content-trei");
+
+}
+
+seeMoreTrei.addEventListener("click", seeMoreFunctionTrei);
+
+const seeLessFunctionTeri = () => {
+    spanMoreTrei.classList.add("lorem-content-trei");
+    seeLessTrei.style.display = "none"
+    seeMoreTrei.style.display = "block"
+
+}
+seeLessTrei.addEventListener("click",seeLessFunctionTeri);
+
+
 /*
 structura generala a unui addEventListener:
 1: scriem numele variabileiin care ne-am selectat butonul
@@ -96,4 +158,10 @@ TEMA !!!!!!!!!!!!!!!!!
 1 cand apas pe reset sa dispara see more
 2 de facut pt restul taburilor
 3 de facut un buton de See Less
+*/
+
+/*pasi sa se intample ceva cand apasam pe buton
+1 selectam butonul (document.querySelector)
+2 adaugam eventListener (calculateButton.addEventListener("click",showResoult))
+3 creaza functia care sa se execute pe click
 */
